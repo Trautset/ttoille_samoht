@@ -1,0 +1,35 @@
+import random
+
+user = None
+
+computer = random.choice(['rock','paper','scissors'])
+
+while user == None:
+    user = input('Please choose wisely: ')
+    if user not in ['rock','paper','scissors',]:
+        print('You need to choose something..')
+        user = None
+
+
+if user == computer:
+    print('Draw')
+if user == 'rock':
+    if computer == 'paper':
+        print('computer wins!')
+    elif computer == 'scissors':
+        print('*computer pulls out a piece of paper and wins*')
+if user == 'paper':
+    if computer == 'scissors':
+        print('computer wins!')
+    elif computer == 'rock':
+        print('*computer pulls out a pair of scissors and wins*')
+if user == 'scissors':
+    if computer == 'rock':
+        print('computer wins!')
+    elif computer == 'paper':
+        print('*computer pulls out a rock and wins*')
+
+
+print('computer is {}' .format(computer))
+
+print('user is {}' .format(user))
