@@ -1,0 +1,15 @@
+#Using Python to find the percentage(%) of a number!
+
+#Q: What % is 20 of 150?
+#A: 20/150*100 = 13.333...
+
+#num1 = wholeNum
+num1 = int(input('Enter first number: '))
+print('So your first number is ',num1)
+
+#num2 = partNum
+num2 = int(input('Enter second number: '))
+print('And your second number is ',num2)
+
+#Answer should then display here!
+print('Your percentage is ',num2/num1*100)
